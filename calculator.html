@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Calculator - Event Planning Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Event Planning Service</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="calculator.html">Budget Calculator</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="calculator">
+            <h2>Budget Calculator</h2>
+            <form id="budgetForm">
+                <label for="eventType">Select Service Type:</label>
+                <select id="eventType">
+                    <option value="wedding">Wedding Planning</option>
+                    <option value="corporate">Corporate Events</option>
+                    <option value="party">Birthday Parties</option>
+                    <option value="customized">Customized Events</option>
+                    <option value="consultation">Event Consultation</option>
+                    <option value="venue">Venue Selection</option>
+                    <option value="catering">Catering Services</option>
+                    <option value="entertainment">Entertainment & Activities</option>
+                    <option value="decoration">Event Decoration</option>
+                </select>
+
+                <label for="guestCount">Number of Guests:</label>
+                <input type="number" id="guestCount" min="1" required>
+
+                <label for="duration">Event Duration (hours):</label>
+                <input type="number" id="duration" min="1" required>
+
+                <button type="button" id="calculateButton">Calculate Budget</button>
+            </form>
+            <p id="budgetResult"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Event Planning Service. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
